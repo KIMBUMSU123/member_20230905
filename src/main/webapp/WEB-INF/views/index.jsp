@@ -5,8 +5,14 @@
     <link rel="stylesheet" href="/resources/css/main.css">
 </head>
 <body>
-    <h2>index.jsp</h2>
-    <a href="/save">맴버등록</a> <br>
-    <a href="/members">맴버</a> <br>
+<%@include file="component/header.jsp"%>
+<%@include file="component/nav.jsp"%>
+
+    <h2>Member Project</h2>
+
+    로그인이메일: ${sessionScope.loginEmail} <br>
+    model에 담은 이메일: ${email} <br>
+
+<%@include file="component/footer.jsp"%>
 </body>
 </html>
