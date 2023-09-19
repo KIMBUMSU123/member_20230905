@@ -31,4 +31,12 @@ public class MemberRepository {
     public void delete(Long id) {
         sql.delete("Member.delete", id);
     }
+
+    public MemberDTO findByMemberEmail(String memberEmail) {
+        return sql.selectOne("Member.findByEmail", memberEmail);
+    }
+
+    public void update(MemberDTO memberDTO) {
+        sql.update("Member.update", memberDTO);
+    }
 }

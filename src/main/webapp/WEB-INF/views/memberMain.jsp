@@ -28,4 +28,9 @@
 <%@include file="component/footer.jsp"%>
 
 </body>
+<script>
+    const update_fn = () => {
+        location.href = "/update";
+    }
+</script>
 </html>
